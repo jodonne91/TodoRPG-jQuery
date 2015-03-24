@@ -21,6 +21,7 @@
         <input class='new-task-input' placeholder='New Task...'></input>
         <button class='add-task-button'>Add task to list</button>
       </div>
+
       <div class='container'>
         <ul class='tasks-list'>
         </ul>
@@ -29,7 +30,7 @@
   </body>
 
   <script type='x-handlebars-template' id='task-item-template'>
-    <li class='task-item'>{{text}}<button class='mark-complete-button'>Complete</button></li>
+    <li class='task-item {{status}}' id='{{id}}'>{{text}}<button class='mark-complete-button' id='{{id}}'>Complete</button></li>
   </script>
 
 </html>
